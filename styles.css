@@ -1,6 +1,6 @@
 :root {
-  --clr-dark: #000000;
-  --clr-light: #ffffff;
+  --clr-dark: #000;
+  --clr-light: #fff;
   --clr-blue: blue;
   --glass-bg: #ffffff0d;
   --glass-border: 1px solid #ffffff1a;
@@ -17,7 +17,7 @@ body {
   font-family: sans-serif;
   background:
     linear-gradient(#242e4c8c, #3324428c),
-    url(assets/images/blue-skies.jpeg);
+    url('assets/images/blue-skies.jpeg');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -59,7 +59,7 @@ header {
 }
 
 .city-input:focus {
-  border-color: #ffffff66;
+  border-color: #ffff66;
   background: #ffffff1f;
 }
 
@@ -72,7 +72,7 @@ header {
   font-size: 1rem;
   color: var(--clr-light);
   cursor: pointer;
-  transition: cubic-bezier(0.23, 1, 0.320, 1);
+  transition: cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 .error {
@@ -93,7 +93,7 @@ main {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  grid-column: 1; 
+  grid-column: 1;
   height: 100%;
 }
 
@@ -140,7 +140,7 @@ main {
 .current-icon {
   display: flex;
   flex-direction: column;
-  align-items: flex-end; 
+  align-items: flex-end;
   text-align: right;
 }
 
@@ -168,7 +168,6 @@ main {
 .current-condition {
   background: var(--glass-bg);
   backdrop-filter: var(--blur-effect);
-  -webkit-backdrop-filter: var(--blur-effect);
   border: var(--glass-border);
   border-radius: 16px;
   padding: 20px;
@@ -191,7 +190,6 @@ main {
 .daily {
   background: var(--glass-bg);
   backdrop-filter: var(--blur-effect);
-  -webkit-backdrop-filter: var(--blur-effect);
   border: var(--glass-border);
   border-radius: 16px;
   padding: 24px;
@@ -231,5 +229,3 @@ main {
 .daily-day .daily-day-temperature {
   justify-self: flex-end;
 }
-
-
