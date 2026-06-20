@@ -17,7 +17,7 @@ body {
   font-family: sans-serif;
   background:
     linear-gradient(#242e4c8c, #3324428c),
-    url('assets/images/blue-skies.jpeg');
+    url("assets/images/blue-skies.jpeg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -59,7 +59,7 @@ header {
 }
 
 .city-input:focus {
-  border-color: #ffff66;
+  border-color: #ff66;
   background: #ffffff1f;
 }
 
@@ -76,7 +76,7 @@ header {
 }
 
 .error {
-    display: none;
+  display: none;
 }
 
 main {
