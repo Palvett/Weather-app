@@ -12,7 +12,7 @@ const weatherForm = document.querySelector('.weather-form')
 const errorBox = document.querySelector('.error')
 const cityInput = document.querySelector('.city-input')
 
-async function checkWeather(city) {
+async function checkWeather (city) {
   try {
     const response = await fetch(`${apiUrl}${city}&appid=${apiKey}`)
 
@@ -29,7 +29,7 @@ async function checkWeather(city) {
   }
 }
 
-function showWeather(data) {
+function showWeather (data) {
   errorBox.style.display = 'none'
   cityName.textContent = data.name
   temperature.textContent = Math.round(data.main.temp) + '°C'
@@ -40,7 +40,7 @@ function showWeather(data) {
   weatherIcon.src = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`
 }
 
-function showError() {
+function showError () {
   errorBox.style.display = 'block'
   cityName.textContent = ''
   temperature.textContent = ''
